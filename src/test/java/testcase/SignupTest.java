@@ -123,5 +123,9 @@ public class SignupTest extends Baseclass{
 		String expectedValue2="Sorry, something went wrong. Please try again.";
 		Assert.assertEquals(actualValue,expectedValue2);
 	}
+	@Test(priority = 6)
+	public void LoginwithValidCredentials() {
+	
+	}
 }
 

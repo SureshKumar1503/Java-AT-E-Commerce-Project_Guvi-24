@@ -1,8 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 469.586 s <<< FAILURE! - in TestSuite
-testcase.AddItemTest.AddItemByBrand  Time elapsed: 107.723 s  <<< FAILURE!
+Tests run: 13, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 501.122 s <<< FAILURE! - in TestSuite
+testcase.NavigateBestBuyURLTest.SelectCanada  Time elapsed: 1.126 s  <<< FAILURE!
+java.lang.AssertionError: expected [Best Buy: Shop Online For Deals & Save | Best Buy Canada] but found [Best Buy International: Select your Country - Best Buy]
+	at testcase.NavigateBestBuyURLTest.SelectCanada(NavigateBestBuyURLTest.java:48)
+
+testcase.SignupTest.Signup  Time elapsed: 9.259 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="c-button-unstyled plButton account-button d-flex justify-content-center align-items-center" type="button" id="account-menu-account-button" data-lid="hdr_signin" aria-expanded="false">...</button> is not clickable at point (861, 95). Other element would receive the click: <div id="confirmIt-backdrop" class="confirmIt modal-backdrop in"></div>
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df50faea3941e14cafed1a85581ba083, clickElement {id=DC2F1DCB1A32F88D96434B39B98F619C_element_51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63215/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (df50faea3941e14cafed1a85581ba083)] -> xpath: //div[@class='shop-account-menu']/descendant::button[.='Account']]
+Session ID: df50faea3941e14cafed1a85581ba083
+	at testcase.SignupTest.Signup(SignupTest.java:18)
+
+testcase.SignupTest.LoginInvalidPassword  Time elapsed: 23.729 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='alert']/div"}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3074e637eb07c0bc8deb5772e30cc5b9, findElement {using=xpath, value=//div[@role='alert']/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63599}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63599/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3074e637eb07c0bc8deb5772e30cc5b9
+	at testcase.SignupTest.LoginInvalidPassword(SignupTest.java:97)
+
+testcase.AddItemTest.AddItemByBrand  Time elapsed: 112.237 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//button[.='Keep Address as Entered']"}
   (Session info: chrome=118.0.5993.89)
@@ -10,8 +40,8 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.12.1', revision: '8e34639b11'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a3dfc1803405903d07c4d297fb518d3, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60091}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60091/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a3dfc1803405903d07c4d297fb518d3
+Command: [9bc609b95f8e4f5195ea34889d166b8f, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65484/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bc609b95f8e4f5195ea34889d166b8f
 	at testcase.AddItemTest.AddItemByBrand(AddItemTest.java:116)
 
