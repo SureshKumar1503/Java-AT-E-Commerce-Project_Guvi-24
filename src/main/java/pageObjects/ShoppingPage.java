@@ -148,7 +148,7 @@ public class ShoppingPage extends UtilityPgm {
 	})	
 	private List<WebElement> paymentOptions;
 
-	@FindBy(xpath = "//div[@class='sku-title']")
+	@FindBy(xpath = "//div[@itemprop='name']")
 	WebElement itemPagetitle;
 
 

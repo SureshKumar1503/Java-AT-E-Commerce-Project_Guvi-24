@@ -11,14 +11,17 @@ public class DataConstants {
 	public static ArrayList<String> expTitle = new ArrayList<String>() {
 		{add("Top Deals and Featured Offers on Electronics - Best Buy");
 		add("Deal of the Day: Electronics Deals - Best Buy");
+		add("Yes, Best Buy Sells That – Best Buy");
 		add("My Best Buy Memberships");
 		add("Best Buy Credit Card: Rewards & Financing");
-		add("Best Buy Outlet: Clearance Electronics Outlet Store – Best Buy");
 		add("Gifts Cards and E-Gift Cards - Best Buy");
-		add("Yes, Best Buy Sells That – Best Buy");
-		add("Gift Ideas 2023: Best Gifts to Give This Year - Best Buy");
+		
+		add("Gift Ideas 2024: Best Gifts to Give This Year - Best Buy");
 		add("St. Jude Children's Research Hospital - Best Buy");
 		add("Best Buy for Business - Best Buy");	
+        add("Best Buy Outlet: Clearance Electronics Outlet Store – Best Buy");
+		
+		
 		}
 	};
 
@@ -28,7 +31,7 @@ public class DataConstants {
 		add("Privacy Policy Hub - Best Buy");
 		add("Interest-Based Ads - Best Buy");
 		add("State Privacy Rights - Best Buy");
-		add("Privacy Policy Hub - Best Buy");
+		add("Health Data Privacy Information - Best Buy");
 		add("Start Request - Best Buy");
 		add("Best Buy");
 		add("Start Request - Best Buy");

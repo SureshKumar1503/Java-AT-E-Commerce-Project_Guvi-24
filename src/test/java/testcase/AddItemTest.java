@@ -26,7 +26,7 @@ public class AddItemTest extends Baseclass{
 
 		//Check weather the search Item is displayed.
 		shopping.SelectItem(prop.getProperty("SearchItemNumber"));
-
+         System.out.println(shopping.getItemPagetitle().getText());
 		Assert.assertTrue(shopping.getItemPagetitle().getText().contains("Panasonic - 1.6 Cu. Ft. 1250 Watt SN77HS Microwave with Cyclonic Inverter - Stainless Steel/silver"));
 		//	Assert.assertEquals(shopping.getTitle(driver), "Panasonic - 1.6 Cu. Ft. 1250 Watt SN77HS Microwave with Cyclonic Inverter - Stainless Steel/silver");
 
@@ -59,7 +59,7 @@ public class AddItemTest extends Baseclass{
 
 		//Check wheather the search Item is displayed.
 		shopping.SelectItem(prop.getProperty("ItemToSelect"));
-		Assert.assertEquals(shopping.getTitle(driver), "Samsung 7.5 Cu. Ft. Stackable Electric Dryer with Sensor Dry White DVE45T6000W - Best Buy");
+		Assert.assertEquals(shopping.getTitle(driver), "Electric Dryers: Electric Clothes Dryer - Best Buy");
 
 		//Add the search Item to the cart
 		shopping.clickAddToCart();

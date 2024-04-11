@@ -1,44 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-24T11:34:49 CEST" name="Default suite" finished-at="2023-10-24T11:36:41 CEST" duration-ms="112261">
+  <suite started-at="2024-04-11T01:06:21 IST" name="Suite" finished-at="2024-04-11T01:14:26 IST" duration-ms="484186">
     <groups>
     </groups>
-    <test started-at="2023-10-24T11:34:49 CEST" name="Default test" finished-at="2023-10-24T11:36:41 CEST" duration-ms="112261">
-      <class name="testcase.AddItemTest">
-        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.AddItemTest@618b19ad]" started-at="2023-10-24T11:34:49 CEST" name="startup" finished-at="2023-10-24T11:34:54 CEST" duration-ms="5177" status="PASS">
+    <test started-at="2024-04-11T01:06:21 IST" name="Test" finished-at="2024-04-11T01:14:26 IST" duration-ms="484186">
+      <class name="testcase.NavigateBestBuyURLTest">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:22 IST" name="startup" finished-at="2024-04-11T01:06:26 IST" duration-ms="4935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="AddItemByBrand()[pri:3, instance:testcase.AddItemTest@618b19ad]" started-at="2023-10-24T11:34:54 CEST" name="AddItemByBrand" finished-at="2023-10-24T11:36:41 CEST" duration-ms="106946" status="FAIL">
+        <test-method signature="NavigateURL()[pri:1, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:26 IST" name="NavigateURL" finished-at="2024-04-11T01:06:27 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateURL -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:27 IST" name="close" finished-at="2024-04-11T01:06:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:27 IST" name="startup" finished-at="2024-04-11T01:06:29 IST" duration-ms="2241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="SelectUS()[pri:2, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:29 IST" name="SelectUS" finished-at="2024-04-11T01:06:38 IST" duration-ms="8928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectUS -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:38 IST" name="close" finished-at="2024-04-11T01:06:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:38 IST" name="startup" finished-at="2024-04-11T01:06:43 IST" duration-ms="4166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="SelectCanada()[pri:3, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:43 IST" name="SelectCanada" finished-at="2024-04-11T01:06:52 IST" duration-ms="9161" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Best Buy International: Select your Country - Best Buy] but found [Best Buy: Shop Online For Deals & Save | Best Buy Canada]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Best Buy International: Select your Country - Best Buy] but found [Best Buy: Shop Online For Deals & Save | Best Buy Canada]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcase.NavigateBestBuyURLTest.SelectCanada(NavigateBestBuyURLTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCanada -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.NavigateBestBuyURLTest@63787180]" started-at="2024-04-11T01:06:52 IST" name="close" finished-at="2024-04-11T01:06:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.NavigateBestBuyURLTest -->
+      <class name="testcase.NavigateMenuItemsTest">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:08:40 IST" name="startup" finished-at="2024-04-11T01:08:43 IST" duration-ms="3530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="NavigateBottomLinks()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:08:43 IST" name="NavigateBottomLinks" finished-at="2024-04-11T01:09:36 IST" duration-ms="52505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateBottomLinks -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:09:36 IST" name="close" finished-at="2024-04-11T01:09:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:09:36 IST" name="startup" finished-at="2024-04-11T01:09:39 IST" duration-ms="3428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="NavigateMenuItems()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:09:39 IST" name="NavigateMenuItems" finished-at="2024-04-11T01:10:33 IST" duration-ms="53822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateMenuItems -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.NavigateMenuItemsTest@46dffdc3]" started-at="2024-04-11T01:10:33 IST" name="close" finished-at="2024-04-11T01:10:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.NavigateMenuItemsTest -->
+      <class name="testcase.AddItemTest">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:10:33 IST" name="startup" finished-at="2024-04-11T01:10:37 IST" duration-ms="3831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="SearchAndAddItem()[pri:1, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:10:37 IST" name="SearchAndAddItem" finished-at="2024-04-11T01:11:21 IST" duration-ms="43529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchAndAddItem -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:11:22 IST" name="close" finished-at="2024-04-11T01:11:22 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:11:22 IST" name="startup" finished-at="2024-04-11T01:11:42 IST" duration-ms="20808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="AddItemByDepartment()[pri:2, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:11:42 IST" name="AddItemByDepartment" finished-at="2024-04-11T01:12:22 IST" duration-ms="39592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemByDepartment -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:12:23 IST" name="close" finished-at="2024-04-11T01:12:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:12:23 IST" name="startup" finished-at="2024-04-11T01:12:31 IST" duration-ms="8411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="AddItemByBrand()[pri:3, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:12:31 IST" name="AddItemByBrand" finished-at="2024-04-11T01:14:25 IST" duration-ms="113833" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[.='Keep Address as Entered']"}
-  (Session info: chrome=118.0.5993.89)
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11118b1974941bb577cc7fb8c36192ac, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51696/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11118b1974941bb577cc7fb8c36192ac]]>
+Command: [c06d22c212278455304ae1c7875f06bd, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57097/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c06d22c212278455304ae1c7875f06bd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[.='Keep Address as Entered']"}
-  (Session info: chrome=118.0.5993.89)
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11118b1974941bb577cc7fb8c36192ac, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\pbala\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51696/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11118b1974941bb577cc7fb8c36192ac
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [c06d22c212278455304ae1c7875f06bd, findElement {using=xpath, value=//button[.='Keep Address as Entered']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57097/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c06d22c212278455304ae1c7875f06bd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -52,13 +180,11 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
 at pageObjects.ShoppingPage.fillDeliveryAddressForm(ShoppingPage.java:205)
-at testcase.AddItemTest.AddItemByBrand(AddItemTest.java:120)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at testcase.AddItemTest.AddItemByBrand(AddItemTest.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
@@ -67,7 +193,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
@@ -89,11 +215,85 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddItemByBrand -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcase.AddItemTest@618b19ad]" started-at="2023-10-24T11:36:41 CEST" name="close" finished-at="2023-10-24T11:36:41 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.AddItemTest@5a709816]" started-at="2024-04-11T01:14:26 IST" name="close" finished-at="2024-04-11T01:14:26 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testcase.AddItemTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testcase.SignupTest">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:06:52 IST" name="startup" finished-at="2024-04-11T01:06:56 IST" duration-ms="3901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="Signup()[pri:1, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:06:56 IST" name="Signup" finished-at="2024-04-11T01:07:14 IST" duration-ms="18151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:14 IST" name="close" finished-at="2024-04-11T01:07:14 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:14 IST" name="startup" finished-at="2024-04-11T01:07:17 IST" duration-ms="2939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="Login()[pri:2, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:17 IST" name="Login" finished-at="2024-04-11T01:07:31 IST" duration-ms="13674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:31 IST" name="close" finished-at="2024-04-11T01:07:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:31 IST" name="startup" finished-at="2024-04-11T01:07:35 IST" duration-ms="3280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="LoginInvalidEmail()[pri:3, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:35 IST" name="LoginInvalidEmail" finished-at="2024-04-11T01:07:52 IST" duration-ms="17382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidEmail -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:52 IST" name="close" finished-at="2024-04-11T01:07:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:52 IST" name="startup" finished-at="2024-04-11T01:07:55 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="LoginInvalidPassword()[pri:4, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:07:55 IST" name="LoginInvalidPassword" finished-at="2024-04-11T01:08:14 IST" duration-ms="18972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidPassword -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:14 IST" name="close" finished-at="2024-04-11T01:08:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:14 IST" name="startup" finished-at="2024-04-11T01:08:17 IST" duration-ms="2983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="LoginInvalidInvalidPassword()[pri:5, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:17 IST" name="LoginInvalidInvalidPassword" finished-at="2024-04-11T01:08:36 IST" duration-ms="19044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidInvalidPassword -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:36 IST" name="close" finished-at="2024-04-11T01:08:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:36 IST" name="startup" finished-at="2024-04-11T01:08:39 IST" duration-ms="2599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="LoginwithValidCredentials()[pri:6, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:39 IST" name="LoginwithValidCredentials" finished-at="2024-04-11T01:08:39 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginwithValidCredentials -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcase.SignupTest@525575]" started-at="2024-04-11T01:08:40 IST" name="close" finished-at="2024-04-11T01:08:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcase.SignupTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
